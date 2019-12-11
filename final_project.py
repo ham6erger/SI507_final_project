@@ -358,7 +358,7 @@ def fat_summary():
 
 def country_summary():
     country=input('Please enter one country to see - Taiwan/ Korea/ Hong Kong/ Singapore:    ')
-    country_summary=get_wiki_data(country).values
+    country_summary=get_wiki_data(country)[country]
     print("Here is the summary for "+ str(country) + ": ")
     cs= str(country_summary)
     return cs
